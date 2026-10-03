@@ -9,13 +9,16 @@ async function obtenerPokemon() {
   }
   
   for (const s of datos.stats) {
-    console.log("Estadisticas: " + s.stat.name + s.base_stat);
+    console.log("Estadisticas: " + s.stat.name + " - " + s.base_stat);
   }
   
   for (const a of datos.abilities) {
     console.log("Habilidades: " + a.ability.name);
   }
 }
+
+obtenerPokemon();
+
 
 
 
